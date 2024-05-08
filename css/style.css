@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 /* BOTON HAMBURGUESA */
 .navbar-toggler {
     background-color: grey;
@@ -174,9 +175,12 @@
 .contenedorQuienesSomos {
     padding: 20px;
     border-radius: 10px;
-    background-image: linear-gradient(to bottom, #ded4c6, #8e8474); /* Gradiente de color */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
-    border: rgba(0, 0, 0, 0.1); /* Borde */
+    background-image: linear-gradient(to bottom, #ded4c6, #8e8474);
+    /* Gradiente de color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra */
+    border: rgba(0, 0, 0, 0.1);
+    /* Borde */
 }
 
 /* Galeria de imagenes */
@@ -239,6 +243,7 @@
 }
 
 /* CONTACTO */
+/* CONTACTO */
 .bodyContacto {
     background-color: #8c8274;
 }
@@ -278,7 +283,8 @@
 
 .redesContacto {
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Cambia a una disposición en columna */
+    align-items: center; /* Centra horizontalmente los elementos */
     gap: 20px;
     margin-bottom: 20px;
 }
@@ -290,7 +296,9 @@
 
 .redesContacto p {
     margin-bottom: 10px;
+    text-align: center; /* Centra el texto */
 }
+
 
 /* FOOTER */
 .footerRedes {
@@ -430,8 +438,13 @@ footer {
         margin: 0 auto;
     }
 }
-.headerIndex{
-    img{
+
+.mapa {
+    max-width: 80%;
+}
+
+.headerIndex {
+    img {
         max-width: 80%;
     }
 }
@@ -439,7 +452,8 @@ footer {
 /* Estilo para pantallas pequeñas */
 @media only screen and (max-width: 600px) {
     .headerIndex {
-        background-image: url(../recursos/imagenInicioMobile.jpg); /* Ruta de la nueva imagen */
+        background-image: url(../recursos/imagenInicioMobile.jpg);
+        /* Ruta de la nueva imagen */
     }
 }
 
@@ -491,12 +505,15 @@ footer {
         margin: 0 auto;
     }
 }
+
 /* MEDIAQUERYS PARA SERVICIOS */
 /* Media query para dispositivos móviles */
 @media only screen and (max-width: 767px) {
+
     /* Ajustes específicos para el header */
     .headerIndex {
-        padding-top: 20px; /* Ajusta el espacio superior del header */
+        padding-top: 20px;
+        /* Ajusta el espacio superior del header */
     }
 
     /* Ajustes específicos para las imágenes */
@@ -507,31 +524,34 @@ footer {
     }
 
     .bodyServicios .imagenesServicio img {
-        max-width: 80%; /* Ajusta el tamaño máximo de las imágenes */
-        height: auto; /* Evita que las imágenes se distorsionen */
-        margin-bottom: 20px; /* Agrega un espacio entre las imágenes */
+        max-width: 80%;
+        /* Ajusta el tamaño máximo de las imágenes */
+        height: auto;
+        /* Evita que las imágenes se distorsionen */
+        margin-bottom: 20px;
+        /* Agrega un espacio entre las imágenes */
     }
 }
 
 /* Media query para tablets */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    /* Ajustes específicos para el header */
+
     .headerIndex {
-        padding-top: 30px; /* Ajusta el espacio superior del header */
+        padding-top: 30px;
     }
 
-    /* Ajustes específicos para las imágenes */
     .bodyServicios .imagenesServicio {
         display: flex;
         justify-content: center;
     }
 
     .bodyServicios .imagenesServicio img {
-        max-width: 80%; /* Ajusta el tamaño máximo de las imágenes */
-        height: auto; /* Evita que las imágenes se distorsionen */
-        margin-right: 20px; /* Agrega un espacio entre las imágenes */
+        max-width: 80%;
+        height: auto;
+        margin-right: 20px;
     }
 }
+
 /* MEDIAS QUERYS CONTACTO */
 /* Media query para dispositivos celulares */
 @media only screen and (max-width: 767px) {
@@ -539,27 +559,22 @@ footer {
         padding: 20px;
         margin: 20px;
     }
-
     .tituloContacto {
         font-size: 30px;
     }
-
     .contactoInfo p {
         font-size: 16px;
     }
-
     .redesContacto {
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
-
     .redesContacto a {
-        display: inline-block; /* Alinear los enlaces horizontalmente */
+        display: inline-block;
     }
-
     .redesContacto p {
-        margin-bottom: 0; /* Eliminar el margen inferior para los párrafos */
+        margin-bottom: 0;
     }
 }
 
@@ -581,4 +596,33 @@ footer {
     .redesContacto {
         gap: 20px;
     }
+}
+
+/* Media queries para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    .contenedorQuienesSomos .imagenFlores {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.mapa {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.caja {
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+
+.caja iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;   
+    top: 0;    
+    left: 0; 
+    border: 0;   
 }
