@@ -430,7 +430,18 @@ footer {
         margin: 0 auto;
     }
 }
+.headerIndex{
+    img{
+        max-width: 80%;
+    }
+}
 
+/* Estilo para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+    .headerIndex {
+        background-image: url(../recursos/imagenInicioMobile.jpg); /* Ruta de la nueva imagen */
+    }
+}
 
 /* Media query para tablets */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
