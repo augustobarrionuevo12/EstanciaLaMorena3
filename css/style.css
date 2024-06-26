@@ -196,7 +196,7 @@
 
 /* -------SERVICIO-------- */
 .bodyServicios {
-    background-image: linear-gradient(to bottom, #544d41, rgb(160, 135, 96));
+    background-image: linear-gradient(to bottom, #bbb4a5, rgb(131, 128, 122));
     max-width: 100%;
 }
 
@@ -210,11 +210,11 @@
 }
 
 .tituloServicios {
-    color: #b2a392;
+    color: #000000;
     margin: 20px;
     text-align: center;
     display: block;
-    background-color: #3b2e1f3e;
+    background-color: #ffffff00;
     margin: 30px;
     font-size: 24px;
 }
@@ -222,13 +222,13 @@
 .servicio h2 {
     text-align: center;
     font-size: 32px;
-    color: #ba5a01;
+    color: #493523;
 }
 
 .servicio p {
     text-align: center;
     font-size: 20px;
-    color: #c0c0c0;
+    color: #000000;
 }
 
 .imagenesServicio {
